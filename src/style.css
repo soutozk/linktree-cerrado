@@ -25,11 +25,6 @@
 }
 
 body {
-  /* background-image: url(/assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center ;
-  background-size: cover; */
-
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
@@ -37,7 +32,6 @@ body {
 body * {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text-color);
-
 }
 
 #container {
@@ -51,12 +45,10 @@ body * {
 #profile {
   text-align: center;
   padding: 12px;
-
 }
 
 #profile img {
   width: 154px;
-  
 }
 
 #profile p {
@@ -67,7 +59,6 @@ body * {
 #switch {
   position: relative;
   width: 64px;
-
   margin: 4px auto;
 }
 
@@ -84,7 +75,7 @@ body * {
   left: 0;
   z-index: 1;
   cursor: pointer;
-  animation:  slide-back 0.3s;
+  animation: slide-back 0.3s;
 }
 
 .light #switch button {
@@ -92,7 +83,6 @@ body * {
 }
 
 #switch button:hover {
-
   outline: 8px solid var(--highlighht-color);
 }
 
@@ -111,37 +101,41 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   padding: 24px 0;
 }
-
 ul li a {
   display: flex;
-  justify-content: center;
-
+  align-items: center;
+  gap: 12px;
   padding: 16px 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
-  border-radius: 8px;
-
+  border-radius: 45px;
   backdrop-filter: blur(4px);
-
   text-decoration: none;
   font-weight: 500;
-  transition: backgronud 0.2s;
+  transition: transform 0.2s ease, background 0.2s ease;
+  position: relative;
+  justify-content: center; /* Centraliza o texto */
+}
+
+ul li a i {
+  position: absolute;
+  left: 16px; /* Ícone à esquerda */
+  font-size: 18px;
+  color: var(--text-color);
 }
 
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+  transform: translateY(4px);
 }
 
 #social-links {
   display: flex;
   justify-content: center;
-
   padding: 24px 0;
-
   font-size: 24px;
 }
 
@@ -168,32 +162,30 @@ a {
   text-decoration: none;
 }
 
-
 @media (min-width: 700px) {
-  :root{
-    -bg-url: url(/assets/bg-desktop.jpg)
+  :root {
+    --bg-url: url(/assets/bg-desktop.jpg);
   }
 
-  .light{
-     -bg-url: url(/assets/bg-desktop-light.jpg)
+  .light {
+    --bg-url: url(/assets/bg-desktop-light.jpg);
   }
 }
 
-
-@keyframes slide-in{
-  from{
+@keyframes slide-in {
+  from {
     left: 0;
   }
-  to{
+  to {
     left: 50%;
   }
 }
 
-@keyframes slide-back{
-  from{
+@keyframes slide-back {
+  from {
     left: 50%;
   }
-  to{
+  to {
     left: 0;
   }
 }
