@@ -40,11 +40,13 @@ body * {
   height: 712px;
   margin: 56px auto 0px;
   padding: 0 24px;
+  display: flex;
+  flex-direction:column ;
+
 }
 
 #profile {
   text-align: center;
-  padding: 12px;
 }
 
 #profile img {
@@ -160,8 +162,50 @@ footer {
 
 a {
   text-decoration: none;
+
 }
 
+ion-icon {
+  font-size: 30px;
+}
+
+.map-container {
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.226);
+box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+}
+
+.map-container h2 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  color:rgb(255, 255, 255);
+}
+
+.loc-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: 0 auto; 
+  margin-bottom: 15px;
+
+  border-radius: 15px;
+
+}
+
+iframe {
+  width: 95%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
 @media (min-width: 700px) {
   :root {
     --bg-url: url(/assets/bg-desktop-dark.jpg);
