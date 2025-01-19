@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(/assets/bg-mobile-dark.jpg);
+  --bg-url: url(/assets/bg-mobile-dark_optimized_.webp);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: rgb(255, 255, 255);
-  --bg-url: url(/assets/bg-mobile-light.jpg);
+  --bg-url: url(/assets/bg-mobile-light_optimized_.webp);
   --surface-color: rgba(125, 124, 124, 0.198);
   --stroke-color: rgb(255, 255, 255);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -210,11 +210,11 @@ iframe {
 }
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(/assets/bg-desktop-dark.jpg);
+    --bg-url: url(/assets/bg-desktop-dark_optimized_.webp);
   }
 
   .light {
-    --bg-url: url(/assets/bg-desktop-light.jpg);
+    --bg-url: url(/assets/bg-desktop-light_optimized_.webp);
   }
 }
 
