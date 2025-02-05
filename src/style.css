@@ -27,8 +27,8 @@
 body {
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
-   background-attachment: fixed;
-   margin: 0;
+  background-attachment: fixed;
+  margin: 0;
 }
 
 body * {
@@ -43,8 +43,7 @@ body * {
   margin: 56px auto 0px;
   padding: 0 24px;
   display: flex;
-  flex-direction:column ;
-
+  flex-direction: column;
 }
 
 #profile {
@@ -164,7 +163,6 @@ footer {
 
 a {
   text-decoration: none;
-
 }
 
 ion-icon {
@@ -175,8 +173,7 @@ ion-icon {
   text-align: center;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.226);
-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .map-container h2 {
@@ -184,7 +181,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   font-size: 1.5rem;
   padding: 10px;
   border-radius: 20px 20px 0px 0px;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .loc-container {
@@ -194,11 +191,10 @@ box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   width: 100%;
   max-width: 800px;
   height: 300px;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-bottom: 15px;
 
   border-radius: 15px;
-
 }
 
 iframe {
@@ -206,8 +202,18 @@ iframe {
   height: 100%;
   border: none;
   border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
+.footer {
+  background-color: #5e1f74;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 300px;
+}
+
 @media (min-width: 700px) {
   :root {
     --bg-url: url(/assets/bg-desktop-dark_optimized_.webp);
